@@ -1,0 +1,9 @@
+name: Weather Forecast
+type: module
+description: Add field formatter to display weather forecast for the City added in the textfield.
+
+core: 8.x
+dependencies:
+  - drupal:node
+  - text
+  - field

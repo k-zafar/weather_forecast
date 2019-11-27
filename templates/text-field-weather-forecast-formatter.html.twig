@@ -1,0 +1,28 @@
+{#
+/**
+ * @file
+ * Theme implementation to 'Weather Forecast' text field formatter.
+ *
+ * This displays weather forecast of the city entered in text field.
+ *
+ * Available variables:
+ * - weather.city: City added in text field
+ * - weather.temp: Temp in that city
+ * - weather.weather: Weather condition in that city (Cloudy, Clear, Rainy)
+ * - weather.humidity: Humidity in that city
+ * - weather.wind: Wind speed in that city
+ * - weather.pressure: Air Pressure in that city
+ *
+ */
+#}
+
+<div class="weather-forecast">
+	{% if weather.city is empty %}
+		<h3> City not found. </h3>
+	{% else %}
+	  <h3> {{ weather.city}} have {{ weather.temp}} &#8457; and its {{ weather.weather }} </h3>
+	  <div> <strong>Humidity:  </strong> {{weather.humidity}} % </div>
+	  <div> <strong>Wind : </strong> {{ weather.wind}} miles/h </div>
+	  <div> <strong>Pressure: </strong> {{weather.pressure}} hPa </div>
+  {% endif %}
+</div>

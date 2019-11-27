@@ -1,0 +1,3 @@
+services:
+  weather_forecast.showweatherforeacast:
+    class: Drupal\weather_forecast\ShowWeatherForeacast

@@ -1,0 +1,17 @@
+<?php
+/**
+ * @file
+ * Text field formatter module integrating theme with formatter.
+ */
+
+
+/**
+ * Implements hook_theme().
+ */
+function weather_forecast_theme() {
+  return array(
+    'text_field_weather_forecast_formatter' => array(
+      'variables' => array('weather' => NULL,),
+    ),
+  );
+}
